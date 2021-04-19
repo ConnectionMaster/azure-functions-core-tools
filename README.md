@@ -185,9 +185,6 @@ sudo apt-get install azure-functions-core-tools-2
 
 **NOTE**: npm can be used on all platforms. On unix platforms, you may need to specify `--unsafe-perm` if you are running npm with sudo. That's due to npm behavior of post install script.
 
-
-**NOTE**: If you're running the v2 on Windows, Linux, or Mac, make sure to [enable the `beta` runtime](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions#target-the-version-20-runtime) in function app settings, otherwise you may not see the same results as running locally.
-
 ## Getting Started on Kubernetes
 
 Using the Core Tools, you can easily configure a Kubernetes cluster and run Azure Functions on it.
@@ -306,7 +303,7 @@ Azure Functions running on Kubernetes can take advantage of true serverless cont
 Functions deployed to Kubernetes already contain all the tolerations needed to be schedulable to Virtual Kubelet nodes.
 All you need to do is to set up VKubelet on your Kubernetes cluster:
 
-* [Install VKubelet with ACI](https://github.com/virtual-kubelet/virtual-kubelet/tree/master/providers/azure)
+* [Install VKubelet with ACI](https://github.com/virtual-kubelet/azure-aci)
 
 * [Install VKubelet with ACI on AKS](https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az-aks-install-connector)
 
@@ -344,7 +341,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 For questions on Azure Functions or the tools, you can ask questions here:
 
-- [Azure Functions MSDN Forum](https://social.msdn.microsoft.com/Forums/azure/en-US/home?forum=AzureFunctions)
+- [Azure Functions Q&A Forum](https://docs.microsoft.com/en-us/answers/topics/azure-functions.html)
 - [Azure-Functions tag on StackOverflow](http://stackoverflow.com/questions/tagged/azure-functions)
 
 File bugs at [Azure Functions Core Tools repo on GitHub](https://github.com/Azure/azure-functions-core-tools/issues).
